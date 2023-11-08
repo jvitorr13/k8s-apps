@@ -6,15 +6,15 @@ spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
-   matchLabels:
+    matchLabels:
       app: demo-ui
   template:
     metadata:
-     labels:
+      labels:
         app: demo-ui
     spec:
-    containers:
-    - image: jvitorr13/demo-ui:cfbc418df2298703cddc60f3334b0f7dd68a79bf
-      name: demo-ui
-      ports:
-      - containerPort: 80
+      containers:
+      - image: jvitorr13/demo-ui:cfbc418df2298703cddc60f3334b0f7dd68a79bf
+        name: demo-ui
+        ports:
+        - containerPort: 80
